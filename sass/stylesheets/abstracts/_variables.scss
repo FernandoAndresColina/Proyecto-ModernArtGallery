@@ -2,8 +2,17 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-///Break point map - curso conquer
+/// Break point map - curso conquer
 $bp-tablet: 768px;
 $bp-tablet-horizontal: 1024px;
 $bp-desktop: 1200px;
 $bp-desktop-xl: 1440px;
+
+// Colors
+$primary-color: #d5966c;
+$secondary-color: #151515;
+$third-color: #444444;
+
+// Font families
+$font-primary: "Outfit", sans-serif;
+$font-secondary: "Big Shoulders", sans-serif;
