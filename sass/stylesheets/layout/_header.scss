@@ -2,3 +2,56 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 @use "../abstracts" as abs;
+
+.header {
+  .looking {
+    img {
+      max-width: 100%;
+    }
+  }
+  .container {
+    h1 {
+      font-family: abs.$font-secondary;
+      color: abs.$secondary-color;
+      font-size: 80px;
+      line-height: 75px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    p {
+      color: abs.$third-color;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 30px;
+      margin-bottom: 50px;
+    }
+    .location-btn-next {
+      display: inline-flex;
+      align-items: stretch;
+      background-color: abs.$secondary-color;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      overflow: hidden;
+      .btn-text {
+        color: white;
+        font-family: abs.$font-secondary;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        padding: 20px 30px 20px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn-icon {
+        background-color: abs.$primary-color;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 25px;
+      }
+    }
+  }
+}

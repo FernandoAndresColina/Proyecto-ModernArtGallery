@@ -8,5 +8,67 @@
 /**
  * Basic typography style for copy text
  */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header .looking img {
+  max-width: 100%;
+}
+.header .container h1 {
+  font-family: "Big Shoulders", sans-serif;
+  color: #151515;
+  font-size: 80px;
+  line-height: 75px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.header .container p {
+  color: #444444;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+.header .container .location-btn-next {
+  display: inline-flex;
+  align-items: stretch;
+  background-color: #151515;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+}
+.header .container .location-btn-next .btn-text {
+  color: white;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 20px 30px 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .container .location-btn-next .btn-icon {
+  background-color: #d5966c;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+}
 
 /*# sourceMappingURL=style.css.map */
