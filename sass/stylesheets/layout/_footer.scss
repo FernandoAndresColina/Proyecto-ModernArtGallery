@@ -1,3 +1,28 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+@use "../abstracts" as abs;
+
+footer.container {
+  background-color: abs.$secondary-color;
+  padding: 60px 30px 40px 30px;
+  img {
+    margin-bottom: 10px;
+  }
+  p {
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  .socialMedia {
+    ul {
+      @include abs.reset-list();
+      li a img {
+        width: 24px;
+      }
+    }
+  }
+}

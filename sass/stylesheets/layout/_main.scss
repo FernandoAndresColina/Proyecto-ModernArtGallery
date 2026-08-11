@@ -1,0 +1,35 @@
+@use "../abstracts" as abs;
+
+main.container {
+  margin-bottom: 100px;
+  img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-family: abs.$font-secondary;
+    color: abs.$secondary-color;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  p {
+    color: abs.$third-color;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  .bg-blck {
+    background-color: abs.$secondary-color;
+    padding: 20px;
+    h2 {
+      color: white;
+    }
+    p {
+      color: white;
+      margin-bottom: 15px;
+    }
+  }
+}

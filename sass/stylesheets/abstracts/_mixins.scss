@@ -29,3 +29,40 @@
     }
   }
 }
+
+@mixin reset-list() {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button-next {
+  display: inline-flex;
+  align-items: stretch;
+  background-color: v.$secondary-color;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  .btn-text {
+    color: white;
+    font-family: v.$font-secondary;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding: 20px 55px 20px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-icon {
+    background-color: v.$primary-color;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+  }
+}
