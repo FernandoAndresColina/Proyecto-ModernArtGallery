@@ -1,0 +1,20 @@
+@use "../abstracts/" as abs;
+
+header {
+  .location {
+    display: flex;
+    &-map {
+      width: 100%;
+      position: relative;
+    }
+    &-btn-back {
+      position: absolute;
+      @include abs.button-back;
+    }
+    &-icon {
+      position: absolute;
+      top: 260px;
+      left: 175px;
+    }
+  }
+}

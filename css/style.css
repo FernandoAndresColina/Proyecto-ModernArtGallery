@@ -89,6 +89,7 @@ footer.container .socialMedia ul li a img {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 .header .container .location-btn-next .btn-icon {
   background-color: #d5966c;
@@ -97,6 +98,49 @@ footer.container .socialMedia ul li a img {
   align-items: center;
   justify-content: center;
   padding: 0 25px;
+}
+
+header .location {
+  display: flex;
+}
+header .location-map {
+  width: 100%;
+  position: relative;
+}
+header .location-btn-back {
+  position: absolute;
+  display: inline-flex;
+  align-items: stretch;
+  background-color: #151515;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+}
+header .location-btn-back .btn-icon {
+  background-color: #d5966c;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+}
+header .location-btn-back .btn-text {
+  color: white;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  padding: 20px 55px 20px 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+header .location-icon {
+  position: absolute;
+  top: 260px;
+  left: 175px;
 }
 
 main.container {
