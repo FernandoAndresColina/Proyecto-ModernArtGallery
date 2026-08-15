@@ -2,21 +2,24 @@
 
 header {
   .location {
-    position: relative; /* Clave: sirve de referencia para el icono */
-    width: 100%; /* Se adapta al ancho disponible */
-    max-width: 600px; /* Opcional: limita el ancho máximo de tu imagen */
+    position: relative;
+    width: 100%;
+    aspect-ratio: 0.6 / 1;
+    max-width: 100%;
     margin: 0 auto;
+
     &-map {
       width: 100%;
-      height: auto; /* Mantiene la proporción original de la imagen */
+      height: 100%;
+      object-fit: cover;
       display: block;
     }
 
     &-icon-static {
-      position: absolute; /* Clave: se posiciona respecto al contenedor padre */
-      top: 20%; /* Ajusta la distancia desde la parte superior (en %) */
-      left: 30%; /* Ajusta la distancia desde la izquierda (en %) */
-      transform: translate(80%, 180%);
+      position: absolute;
+      top: 51%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     &-btn-back {
       position: absolute;
