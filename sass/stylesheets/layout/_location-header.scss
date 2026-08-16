@@ -21,8 +21,10 @@ header {
       left: 50%;
       transform: translate(-50%, -50%);
     }
+
     &-btn-back {
       position: absolute;
+      top: 0;
       @include abs.button-back;
     }
   }

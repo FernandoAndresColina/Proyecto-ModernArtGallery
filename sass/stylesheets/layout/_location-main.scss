@@ -1,0 +1,39 @@
+@use "../abstracts" as abs;
+
+main {
+  .container {
+    background-color: abs.$secondary-color;
+    padding: 20px;
+    h2 {
+      font-family: abs.$font-secondary;
+      color: white;
+      margin: 20px 0px 40px 0px;
+      font-size: 50px;
+      font-weight: 700;
+    }
+    h3 {
+      font-family: abs.$font-secondary;
+      color: abs.$primary-color;
+      font-size: 32px;
+      margin: 0px 0px 20px 0px;
+    }
+    .address {
+      ul {
+        @include abs.reset-list();
+        color: white;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 18px;
+        font-weight: 200;
+        margin-bottom: 20px;
+      }
+    }
+    p {
+      color: white;
+      font-size: 18px;
+      font-weight: 200;
+      line-height: 28px;
+      margin-bottom: 50px;
+    }
+  }
+}

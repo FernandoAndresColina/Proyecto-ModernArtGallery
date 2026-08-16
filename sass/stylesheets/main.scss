@@ -15,9 +15,11 @@
 @use "layout/container";
 @use "layout/footer";
 @use "layout/header";
-@use "layout/location-header";
 @use "layout/main";
 @use "layout/navbar";
+@use "layout/location-header";
+@use "layout/location-main";
+@use "layout/location-footer";
 
 // 4. Components
 @use "components/button";

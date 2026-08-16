@@ -1,0 +1,25 @@
+@use "../abstracts" as abs;
+
+.location-footer {
+  .container {
+    background-color: abs.$primary-color;
+    padding: 20px;
+    .logo-black {
+      margin-top: 20px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 28px;
+      margin-bottom: 38px;
+    }
+    .socialMedia-black {
+      ul {
+        @include abs.reset-list();
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+}
