@@ -6,7 +6,7 @@
 
 footer.container {
   background-color: abs.$secondary-color;
-  padding: 60px 30px 40px 30px;
+  padding: 30px 35px 30px 35px;
   img {
     margin-bottom: 10px;
   }
@@ -23,6 +23,16 @@ footer.container {
       li a img {
         width: 20px;
       }
+    }
+  }
+  @include abs.breakpoint(tablet) {
+    display: flex;
+    padding: 55px 35px 30px 55px;
+    align-items: flex-start;
+    justify-content: space-between;
+    p {
+      width: 40%;
+      margin: 0;
     }
   }
 }

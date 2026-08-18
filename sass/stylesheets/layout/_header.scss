@@ -5,12 +5,34 @@
 
 .header {
   margin-bottom: 100px;
+  @include abs.breakpoint(tablet) {
+    display: flex;
+  }
   .looking {
-    img {
-      max-width: 100%;
+    max-width: 100%;
+  }
+  .img-tablet {
+    display: none;
+  }
+  .img-mobile {
+    display: block;
+  }
+
+  @include abs.breakpoint(tablet) {
+    .img-tablet {
+      display: block;
+      width: 55%;
+    }
+    .img-mobile {
+      display: none;
     }
   }
   .container {
+    @include abs.breakpoint(tablet) {
+      position: absolute;
+      top: 110px;
+      right: 0;
+    }
     h1 {
       font-family: abs.$font-secondary;
       color: abs.$secondary-color;
